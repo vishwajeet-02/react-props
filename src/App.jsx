@@ -87,12 +87,28 @@
 // }
 // export default App;
 import Child1 from "./child1";
+import Count from "./count";
+import Count1 from "./count1";
 const App=()=>{
+    let person={
+       name : "vishwajeet",
+        age : 22,
+        marks : 700
+
+    }
+    const student ={
+       name : "drishti",
+       class : "fifth" ,
+       hobby : "palying"
+    }
+
     return(
         <>
         <h1>this is my App page</h1>
-        <Child1 name="ankur"/>
+        <Count data= {student}/>
+        <Count1 data ={person}/>
+        <Child1/>
         </>
-    )
+    ) 
 }
 export default App;
